@@ -7,7 +7,7 @@ const {MONGOURI}=require(`./keys`)
 const app=express()
 
 app.use(cors({
-    origin: 'https://instagram-clone-frontend-tan.vercel.app/SignIn',
+    origin: 'instagram-clone-frontend-tan.vercel.app',
     methods: ["POST","PUT","GET"],
     credentials: true
 }));
