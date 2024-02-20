@@ -7,7 +7,9 @@ const {MONGOURI}=require(`./keys`)
 const app=express()
 
 const mongoose=require(`mongoose`)
-app.use(cors());
+app.use(cors(
+    
+));
 require(`./models/user`)
 require('./models/post')
 
