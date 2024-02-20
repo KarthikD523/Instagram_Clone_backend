@@ -8,13 +8,8 @@ const app=express()
 
 const mongoose=require(`mongoose`)
 app.use(cors({
-    origin:['https://instagram-clone-frontend-tan.vercel.app/'
-    ],
-    methods: ["POST","PUT","GET"],
-    credentials: true
-}
-    
-));
+  origin: 'https://instagram-clone-frontend-tan.vercel.app'
+}));
 require(`./models/user`)
 require('./models/post')
 
