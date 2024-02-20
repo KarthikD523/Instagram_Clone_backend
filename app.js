@@ -7,9 +7,7 @@ const {MONGOURI}=require(`./keys`)
 const app=express()
 
 const mongoose=require(`mongoose`)
-app.use(cors({
-  origin: 'https://instagram-clone-frontend-tan.vercel.app'
-}));
+
 require(`./models/user`)
 require('./models/post')
 
